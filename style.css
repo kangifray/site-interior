@@ -269,10 +269,8 @@ body {
 .featured-product-hover h3 {
     color: #212121;
     font-size: 21px;
-    /* Приближение из-за подстановки шрифтов */
     font-weight: 700;
     line-height: 30px;
-    /* Приближение из-за подстановки шрифтов */
     text-align: center;
     transform: scaleX(1.0041);
 }
@@ -280,10 +278,8 @@ body {
 .featured-product-hover p {
     color: #6c6c6c;
     font-size: 12px;
-    /* Приближение из-за подстановки шрифтов */
     font-weight: 300;
     line-height: 22px;
-    /* Приближение из-за подстановки шрифтов */
     text-align: center;
     transform: scaleX(1.0041);
     padding-top: 23px;
@@ -296,11 +292,12 @@ body {
 }
 
 .round-link {
-    margin-left: 110px;
-    margin-top: 62px;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 65px;
+    margin-left: 110px;
+    margin-bottom: 19px;
     border-radius: 50%;
     background-color: #ffffff;
     box-shadow: 0 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
@@ -407,20 +404,71 @@ body {
     justify-content: space-between;
 }
 
+.tranding-product-hover {
+    border: 1px solid #9c9c9c;
+    background-color: #ffffff;
+    opacity: 0.9;
+    width: 370px;
+    height: 370px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.tranding-product-hover h3 {
+    color: #212121;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    transform: scaleX(1.0041);
+}
+
+.tranding-product-hover p {
+    color: #6c6c6c;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
+    transform: scaleX(1.0041);
+    padding-top: 23px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.block:hover .tranding-product-hover {
+    display: block;
+}
+
+.round-link-tp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+    margin-left: 160px;
+    margin-bottom: 19px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+    color: #212121;
+    font-size: 25px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 30px
+}
+
+.round-link-tp:hover {
+    background-color: #f7f7f7;
+}
+
 .block {
     margin-bottom: 30px;
     width: 370px;
     height: 370px;
-}
-
-.block:hover {
-    box-shadow: 0 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
-}
-
-.block:active {
-    box-shadow: 0 0 4.85px 0.15px rgba(33, 33, 33, 0.35);
     position: relative;
-    top: 2px;
 }
 
 .hot-deal {
@@ -749,6 +797,7 @@ body {
     margin-left: 340px;
     margin-top: 11px;
     outline: none;
+    cursor: pointer;
 }
 
 .btn-plane:active {
